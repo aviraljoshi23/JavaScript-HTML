@@ -1,0 +1,738 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  justify-content:center;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior:smooth;
+}
+:root{
+  --bg-color:#fff;
+  --text-color:#221314;
+  --main-color: #000000;
+  --second-color: #5a7184;
+  --big-font: 6rem;
+  --h2-font: 3rem;
+  --p-font: 1.1rem;
+}
+.about{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Icons/aboutus.webp") center/cover no-repeat;
+  /* background:url("Icons/aboutus.webp"); */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+section{
+  padding :80px 18%;
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:url("Icons/homebackground.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+
+.menu{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Icons/menu2.jpg") center/cover no-repeat;
+  /* background:url("Icons/menu2.jpg"); */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+
+.tablebooking{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background:url("Icons/joferestaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+.home-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 1;
+}
+.about-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 1;
+}
+.table-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 1;
+}
+.menu-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 1;
+}
+.home-text p{
+  color: #fff;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+
+.menu-text p{
+  color: #fff;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+
+.about-text p {
+  color: rgb(206, 206, 206);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+.home-btn{
+	display: inline-block;
+	font-size: 16px;
+  font-family: cursive;
+	padding: 15px 30px;
+	background: #ffffffbf;
+	color: var(--main-color);
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.home-btn:hover{
+	background: var(--bg-color);
+	transform: scale(1.1);
+}
+.section.t{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 1;
+}
+img.container-img{
+  /*padding: 80px 45% ;*/
+  padding: 0px 15%;
+  border-radius: 15px;
+  transform: scaleX(-1);
+}
+.text-container{
+  font-family: 'Paytone One',sans-serif;
+  font-size:80px;
+  text-align: center;
+  padding: 20px;
+}
+.part2{
+  padding: 80px 15%;
+}
+
+.text-container h4{
+  font-family: 'Paytone One',sans-serif;
+  font-size:80px;
+  text-align: center;
+  padding: 20px;
+}
+.text-container h3{
+  font-family: 'Paytone One',sans-serif;
+  font-size:80px;
+  text-align: center;
+  padding: 20px;
+}
+.text-container h2{
+  font-family:'Paytone One',sans-serif;
+  font-size:80px;
+  text-align: center;
+  padding: 20px;
+}
+.container-img{
+  border-radius: 8px;
+}
+.after-img-text{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 100;
+  padding-top: 10%;
+  font-size:x-large;
+}
+.title{
+  text-align: center;
+  font-size:medium;
+  color:black; 
+}
+/*Home Page Food Image */
+.footer{
+  padding: 80px 30%;
+  width: 100%;
+  margin-top: 150px;
+  background: #333;
+  color: #efefef;
+  display: flex;
+}
+
+/* JOFE FOOD CONTENT*/
+.package{
+  padding: 10px 1%;
+}
+
+.package-content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-gap: 2rem;
+	align-items:revert;
+	margin-top: 5rem;
+}
+.thum{
+	position:static;
+	transition: all .3s cubic-bezier(.445,.05,.55,.95);
+	will-change: filter;
+	cursor: pointer;
+}
+.thum img{
+	width: 100%;
+	height: auto;
+  border-radius: 15px;
+}
+.thum h3{
+	position: absolute;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: right;
+	color: var(--bg-color);
+	top: 36px;
+	right: 40px;
+}
+.food-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 24px;
+}
+.stars i{
+	color:#e1ae06;
+  text-shadow: 15px;
+	font-size: 20px;
+}
+.special h4{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+  font-family: auto;
+}
+.special p{
+	font-size: 15px;
+	color: var(--second-color);
+}
+.thum:hover{
+	/* filter: brightness(100%) hue-rotate(45deg); */
+	transform: scale(1.1);
+  transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95)
+}
+/*Responsive */
+
+.hero__info {
+	text-align: center;
+	font-size: 1.0rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-2);
+  font-style: oblique;
+}
+@media only screen and (max-width:650px){
+  .home-btn {
+    width: 55%;
+    position: inherit;
+    height: 5%;
+  }
+  .home-btn:hover{
+    background: var(--bg-color);
+    transform: scale(1.1);
+  }
+  .home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Icons/homebackground.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+  }
+}
+@media only screen and (max-width:850px){
+  img.container-img {
+    width:100%;
+    padding: 0;
+    height: 100;
+  }
+}
+/* @media only screen and (max-width:650px){
+  header{
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+  }
+} */
+/* @media only screen and (max-width:850px){
+  a.logo{
+    width: 50%;
+    font-size: 20px;
+  }
+} */
+@media only screen and (max-width:650px){
+  h1.text-container{
+    width: 100%;
+    height: 100;
+    transition: all 1.4s ease 0s;
+  }
+}
+@media only screen and (max-width:850px){
+  .home-text h1{
+    width: 100%;
+    font-size: 45px;
+  }
+  .about-text h1{
+    width: 100%;
+    font-size: 45px;
+  }
+  .menu-text h1{
+    width: 100%;
+    font-size: 45px;
+  }
+  .special h4{
+    font-size: px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: auto;
+  }
+  .special p{
+    font-size: 15px;
+    color: var(--second-color);
+  }
+}
+@media only screen and (max-width:850px){
+  .home-text p{
+    width: 100%;
+    font-size: 25px;
+  }
+  .about-text p{
+    width: 100%;
+    font-size: 25px;
+  }
+  .menu-text p{
+    width: 100%;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width:850px){
+  .text-container h1{
+    width: 100%;
+    font-size: 35px;
+    color: var(--text-color);
+  }
+  .text-container h2{
+    width: 100%;
+    font-size: 35px;
+    color: var(--text-color);
+    transition: all 1.4s ease 0s;
+  }
+  .text-container h4{
+    font-family: 'Paytone One',sans-serif;
+    font-size:35px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width:850px){
+  .text-container h1{
+    width: 100%;
+    font-size: 35px;
+    color: var(--text-color);
+  }
+  .text-container h2{
+    width: 100%;
+    font-size: 35px;
+    color: var(--text-color);
+    transition: all 1.4s ease 0s;
+  }
+  .text-container h4{
+    font-family: 'Paytone One',sans-serif;
+    font-size:35px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+
+/* Hero Sections*/
+
+.hero__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse;
+  background-color: #f9f9f9;
+	gap: 5rem;
+}
+.hero__left__wrapper {
+	max-width: 350px;
+}
+.hero__heading {
+  font-family: cursive;
+	font-weight: 600;
+	line-height: 1.4em;
+	text-align: center;
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-1);
+}
+.hero__info {
+	text-align: center;
+	font-size: 1.0rem;
+	margin-bottom: 1.5rem;
+	color: var(--black-2);
+  font-style: oblique;
+}
+.hero__imgWrapper {
+  max-width: none;
+  width: 100%;
+  border-radius: 3%;
+}
+.button__wrapper {
+	text-align: center;
+}
+
+@media only screen and (min-width: 850px) {
+	.hero__wrapper {
+		flex-direction: row;
+		gap: 15%;
+    background-color: #f9f9f9;
+	}
+	.hero__left {
+		flex: 3;
+    padding: 15px;
+	}
+	.hero__right {
+		flex: 4;
+	}
+	.hero__heading {
+		font-size: 3.6rem;
+		margin-bottom: 2rem;
+		text-align: left;
+    font-family: cursive;
+	}
+
+	.hero__info {
+		margin-bottom: 2rem;
+		text-align: left;
+		font-size: 1.0rem;
+    font-style: oblique;
+	}
+
+	.button__wrapper {
+		text-align: left;
+	}
+	.hero__imgWrapper {
+		max-width: none;
+		width: 100%;
+    border-radius: 3%;
+	}
+  /* .hero__imgWrapper #menu{
+		max-width: none;
+		width: 70%;
+    border-radius: 3%;
+	} */
+  .hero__left,
+	.hero__right {
+		flex: 1;
+    padding: 15px;
+	}
+}
+
+/*About US IMAGE CONTAINER*/
+.container .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ 
+ .container .box .dream{
+   display: flex;
+   flex-direction: column;
+   width: 32.5%;
+ }
+ 
+ .container .box .dream img{
+   width: 100%;
+   padding-bottom: 15px;
+   border-radius: 5px;
+ }
+ 
+ .container .btn{
+   margin: 40px 0 70px 0;
+   background: #222;
+   padding: 15px 40px ;
+   border-radius: 5px;
+ }
+ 
+ .container .btn a{
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 3px;
+ }
+ 
+ @media only screen and (max-width: 769px){
+     .container .box{
+    flex-direction: column;
+   }
+ 
+ .container .box .dream{
+   width: 100%;
+ }
+ }
+
+@media (max-width: 575px){
+	.newsletter form{
+		width: 350px;
+	}
+	:root{
+		--big-font: 3.8rem;
+	  --h2-font: 1.8rem;
+	  transition: .2s;
+	}
+	.text{
+		text-align: center;
+	}
+	.home{
+		height: 85vh;
+		transition: .2s;
+	}
+}
+/*home page footer */
+#contact{
+	background: var(--main-color);
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+	padding: 20px 0;
+}
+.list{
+	width: 45%;
+  font-family: auto;
+}
+.list h4{
+	font-size: 21px;
+	color: var(--bg-color);
+	margin-bottom: 30px;
+	position: relative;
+  font-family: auto;
+}
+.list h4::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 60px;
+	left: 0;
+	bottom: -10px;
+	background: var(--bg-color);
+}
+.list ul li:not(last-child) {
+	margin-bottom: 16px;
+}
+.list ul li a{
+	color: #ffffffbf;
+	font-size: var(--p-font);
+	display: block;
+	transition: .3s;
+  font-family: 'boxicons';
+}
+.list ul li a:hover{
+	color: var(--bg-color);
+	transform: translateX(14px);
+  font-family: 'boxicons';
+}
+.list .social a{
+	height: 40px;
+	width: 40px;
+	background: var(--bg-color);
+	color: var(--main-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 21px;
+	border-radius: 15px;
+	transition: .3s;
+	margin-right: 10px;
+}
+.list .social a:hover{
+	transform: scale(1.1);
+}
+.end-text{
+	text-align: center;
+	padding-top: 90px;
+}
+.end-text p{
+	color: var(--bg-color);
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.list ul li a {
+  color: #ffffffbf;
+  font-size: var(--p-font);
+  display: block;
+  transition: .3s;
+  font-family: 'boxicons';
+  font-size: 15px;
+}
+.list h4 {
+  font-size: 14px;
+  color: var(--bg-color);
+  margin-bottom: 30px;
+  position: relative;
+  font-family: auto;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* https://www.youtube.com/watch?v=-dBzfndKwZo */
+
+/* https://drive.google.com/file/d/1w97wf3gzSpVdRO2Pw4kyJb6EZ2Dn3mzm/view */
+/*Orders Page*/
+
+.order{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Icons/orderpage.jpg") center/cover no-repeat;
+  /* background:url("Icons/orderpage.jpg"); */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  align-items: center;
+}
+.order-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: black;
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  transition: all 1.4s ease 0s;
+  opacity: 0.8;
+  background: #ffff;
+}
+.order-text p{
+  color: #fff;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+
+.order-btn{
+	display: inline-block;
+	font-size: 16px;
+  font-family: cursive;
+	padding: 15px 30px;
+	background: #ffffffbf;
+	color: var(--main-color);
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.order-btn:hover{
+	background: black;
+  color: #fff;
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 850px){
+  .order-text h1 {
+      width: 100%;
+      font-size: 45px;
+  }
+  .text-container #table{
+    width: 100%;
+    font-size: 35px;
+    color: var(--bg-color);
+  }
+}
+/*--------Menu Page-----------*/
+
+@media only screen and (max-width: 850px){
+  .text-container h3{
+    width: 100%;
+    font-size: 35px;
+    color: var(--text-color);
+    font-family: 'Paytone One',sans-serif;
+    transition: all 1.4s ease 0s;
+  } 
+}
+
+/* Table Reservation */
