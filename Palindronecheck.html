@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function Palindrome()
+            {
+                var rem, temp, final = 0;
+                document.write("<h1> Program to Check Palindrone Number</h1>");
+                var number = prompt("Enter the Number");
+
+                temp = number;
+                while(number>0)
+                {
+                    rem = number%10;
+                    number = parseInt(number/10);
+                    final = final*10+rem;
+                }
+                if(final==temp)
+                {
+                    document.write("The inputed number is Palindrome");
+                }
+                else
+                {
+                    document.write("The inputted number is not palindrome");
+                }
+            }
+            Palindrome();
+            </script>
+        </body>
+    </head>
+</html>

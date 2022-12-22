@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function AvgMarks()
+            {
+                document.write("<h1>Infobeans Student Marks Average</h1>");
+
+                var student = [['Aviral',88.5],['Chetan',90],['Divya',71],['Nitesh',85]];
+                var avg=0;
+                const x = new Array(5);
+                for(var i=0;i<student.length;i++)
+                {
+                    avg = avg+student[i][1];
+                }
+                var average = (avg/student.length);
+
+                document.write("<h2>Average of Class "+(avg)/student.length+"<br>");
+
+                if(average<60)
+                {
+                    document.write("<h3> GRADE F :- "+average);
+                }
+                else if(average<75)
+                {
+                    document.write("<h3> GRADE E :- "+average);
+                }
+                else if(average<85)
+                {
+                    document.write("<h3> GRADE D :- "+average);
+                }
+                else if(average<90)
+                {
+                    document.write("<h3> GRADE C :- "+average);
+                }
+                else if(average<95)
+                {
+                    document.write("<h3> GRADE B :- "+average);
+                }
+                else if(average<100)
+                {
+                    document.write("<h3> GRADE A :- "+average);
+                }
+            }
+            AvgMarks();
+            </script>
+        </body>
+    </head>
+</html>

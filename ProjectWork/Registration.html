@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                function validationcheck(){
+                    var nameErr = true;
+                    var name  = document.getElementById("name").value;
+                        // Validate name
+                        if(name == "") {
+                            alert("Please enter your name");
+                        } else {
+                            var regex = /^[a-zA-Z\s]+$/;                
+                            if(regex.test(name) === false) {
+                                alert("Please enter a valid name");
+                            }
+                        }
+                        var email  = document.getElementById("email").value;
+                        // Validate name
+                        if(email == "") {
+                            alert("Please enter your mail id");
+                        } else {
+                            var regex = /^\S+@\S+\.\S+$/ ;             
+                            if(regex.test(email) === false) {
+                                alert("Please enter a valid Email id");
+                            }
+                        }
+                    // var contact = document.getElementById("phoneNo").value;
+                    // if(contact==0)
+                    // {
+                    //     alert("No data in contact")
+                    // }
+                    var address  = document.getElementById("address").value;
+                        // Validate name
+                        if(address == "") {
+                            alert("Please enter your address");
+                        } else {
+                            var regex = /^\S+\S+\,\S+$/ ;             
+                            if(regex.test(address) === false) {
+                                alert("Please Enter a valid Address");
+                            }
+                        }
+                }
+            </script>
+            <div style="text-align: center; ">
+                <label for="Registration Portal"></label>
+                Student Name <input type="text" id="name"><br><br>
+                E-MAIL ID<input type="text" id="email"><br><br>
+                phoneNo<input type="number" id="phoneNo"><br><br>
+                address<input type="text" id="address"><br> <br>
+
+                <button onclick="validationcheck()">Submit</button>
+            </div>
+        </body>
+
+    </head>
+</html>

@@ -1,0 +1,37 @@
+
+
+<!-- Write a JavaScript for loop that will iterate from 0 to 15. For each iteration,
+it will check if the current number is odd or even, and display a message to the screen. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function NumSeries03()
+            {
+                document.write("<h1>Write a JavaScript for loop that will iterate from 0 to 15. For each iteration,<br>it will check if the current number is odd or even, and display a message to the screen.</h1>");
+                // const x = [40, 100, 1, 5, 25, 10];
+                // var n = prompt("Enter the Size of Array");
+                const x = new Array(5);
+                for(var i = 0;i<x.length;i++)
+                {
+                    x[i] = prompt("Enter the Element"+i+".....");
+                }
+                for(var j = 0;j<x.length;j++)
+                {
+                    if(x[j]%2==0)
+                    {
+                        document.writeln(x[j]+" Even<br>");
+                    }
+                    else if(x[j]%2!=0)
+                    {
+                        document.writeln(x[j]+" Odd<br>");
+                    }
+                }
+            }
+            NumSeries03();
+            </script>
+        </body>
+    </head>
+</html>

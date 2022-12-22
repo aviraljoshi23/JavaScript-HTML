@@ -1,0 +1,51 @@
+<!-- Q.105) C program to find nearest lesser and greater element in array
+Given an array of N elements and we have to find nearest lesser and nearest greater element using C program.
+Example:
+    Input:
+    Enter the number of elements for the arrray : 3  
+ 
+    Enter the elements for array_1.. 
+    array_1[0] : 1   
+    array_1[1] : 2   
+    array_1[2] : 3   
+ 
+    Enter the number : 2 
+ 
+    Output:
+    Element lesser than 2 is : 1 
+    Element greater than 2 is : 3 -->
+<script>
+    function  getNearMaxMin()
+    {
+        var min = -2147483648;
+        var max = 2147483647;
+        const  x = new Array(5);
+        document.write("<h1> Nearest Number & Greater Number ");
+        for(var i = 0;i<x.length;i++)
+        {
+            x[i] = prompt("Enter the Element "+i+"");
+        }
+        var num = prompt("Enter the Number to check ");
+        for(var i = 0;i<x.length;i++)
+        {
+            if(x[i]>num&&x[i]<max)
+                max = x[i];
+            if(x[i]<num&&min<x[i])
+                min = x[i];
+        }
+        for(var i = 0;i<x.length;i++)
+        {
+            document.write("<br>"+x[i]+"<br>");
+        }
+        document.write("Your Number:- "+num+"<br>");
+		if(min!= -2147483648)
+            document.write("Min Number:- "+min+"<br>");
+		else
+            document.write("No Min Element");
+		if(max!= 2147483647)
+            document.write("Max Number:- "+max+"<br>");
+		else
+            document.write("No Max Element");
+    }
+    getNearMaxMin();
+</script>

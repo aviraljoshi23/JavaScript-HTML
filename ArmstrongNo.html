@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function ArmstrongCheck()
+            {
+                var r,sum=0,temp;
+                document.write("<h1> Program to Check Armstrong Number</h1>");
+                var number = prompt("Enter the Number: ");
+                temp = number;
+                while(number>0)
+                {
+                    r = number%10;
+                    sum  = sum+(r*r*r);
+                    number  = number/10;
+                }
+                if(sum==temp)
+                {
+                    document.writeln(temp+"YES IT IS A ARMSTRONG");
+                }
+                else{
+                    document.writeln(temp+" NOT A AMRSTRONG NUMBER :- "+sum);
+                }
+            }
+            ArmstrongCheck();
+            </script>
+        </body>
+    </head>
+</html>

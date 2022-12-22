@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                function add()
+                {
+
+                    var n1 = document.getElementById("n1").value;
+                    var n2 = document.getElementById("n2").value;
+                    var x = parseInt(n1+n2);
+                    document.getElementById("result").value=x;
+                }
+                function sub()
+                {
+                    var n1 = document.getElementById("n1").value;
+                    var n2 = document.getElementById("n2").value;
+                    var x = n1-n2;
+                    document.getElementById("result").value=x;
+                }
+                function multiply()
+                {
+                    var n1 = document.getElementById("n1").value;
+                    var n2 = document.getElementById("n2").value;
+                    var x = n1*n2;
+                    document.getElementById("result").value=x;
+                }
+                function divide()
+                {
+                    var n1 = document.getElementById("n1").value;
+                    var n2 = document.getElementById("n2").value;
+                    var x = n1/n2;
+                    document.getElementById("result").value=x;
+                }
+                function modules()
+                {
+                    var n1 = document.getElementById("n1").value;
+                    var n2 = document.getElementById("n2").value;
+                    var x = n1%n2;
+                    document.getElementById("result").value=x;
+                }
+            </script>
+            number1<input type="text" id="n1">
+            number2<input type="text" id="n2">
+            Your Result<input type="text" id="result">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="multiply()">*</button>
+            <button onclick="divide()">/</button>
+            <button onclick="modules()">%</button>
+
+        </body>
+
+    </head>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function ReverseArray()
+            {
+                document.write("<h1>Reversing the array </h1>");
+                const x = new Array(5);
+                for(var i =0;i<x.length;i++)
+                {
+                    x[i] = prompt("ENTER THE AT ("+i+")");
+                }
+                var temp=0;
+                for(var i =0;i<x.length/2;i++)
+                {
+                    temp = x[i];
+                    x[i] = x[x.length-i-1];
+                    x[x.length-i-1] = temp;
+                }
+                document.write("<h1>Reversed Array </h1><br>");
+                for(var i =0;i<x.length;i++)
+                {
+                    document.writeln(" "+x[i]);
+                }
+            }
+            ReverseArray();
+            </script>
+        </body>
+    </head>
+</html>

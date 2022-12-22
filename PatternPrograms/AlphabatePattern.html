@@ -1,0 +1,79 @@
+<script>
+    document.write("<h1> Alphabate Pattern<br><br>");
+
+
+//                 *
+//               *  *
+//             *      *
+//           *          *
+//         * * * * * * * * *
+//       *                *
+//     *                   *
+//   *                      *
+    function letterA()
+    {
+        for(var i=1;i<=8;i++)
+        {
+            for(var space =i;space<=8;space++)
+            {
+                document.write("&nbsp;&nbsp");
+            }
+            for(var j =1;j<=(2*i-1);j++)
+            {
+                if(i==5||j==1||j==(2*i-1))
+                {
+                    document.write("*");
+                }
+                else{
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+
+    //      * * *
+    //   *         
+    //   *         
+    //   *         
+    //      * * *
+    function letterC()
+    {
+        for(var i=1;i<=8;i++)
+        {
+            for(var j =1;j<=8;j++)
+            {
+                if(i==1&&j>5||i>1&&i<=4&&j==4||i==5&&j>5)
+                {
+                    document.write("* ");
+                }
+                else{
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+    function letterV()
+    {
+        for(var i=1;i<=8;i++)
+        {
+            for(var k=1;k<=i;k++)
+            {
+                document.write("&nbsp;&nbsp;");
+            }
+            for(var j=16;j>(2*i-1);j--)
+            {
+                if(j==16||i==(j-i))
+                {
+                    document.write("*");
+                }
+                else
+                {
+                    document.write("&nbsp;&nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+</script>

@@ -1,0 +1,30 @@
+
+
+
+<script>
+
+		sc.nextLine();
+		while(t-->0)
+		{
+		    
+		    int n,m;
+		    
+		    //Creating 2 array of size n and m
+		    int a[]=new int[n];
+		    int b[]=new int[m];
+		    
+		    //inserting elements to array a
+		    for(int i=0;i<n;i++)
+		    {
+		        a[i]=sc.nextInt();
+		    }
+		    
+		    //inserting elements to array b
+		    for(int i=0;i<m;i++)
+		    {
+		        b[i]=sc.nextInt();
+
+		    //calling doUnion method and printing the results
+		    System.out.println(ob.doUnion(a,n,b,m));
+		}
+</script>

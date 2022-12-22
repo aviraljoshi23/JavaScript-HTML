@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function MInMax()
+            {
+                document.write("<h1>Maximum Value & Minimum Value</h1>");
+                // const x = [40, 100, 1, 5, 25, 10];
+                const x = new Array(5);
+                for(var i =0;i<x.length;i++)
+                {
+                    x[i] = prompt("ENTER THE AT ("+i+")");
+                }
+                var max = x[0],min = x[0];
+                for(var i = 0;i<x.length;i++)
+                {
+                    if(max<x[i])
+                    {
+                        max = x[i];
+                    }
+                    else if(min>x[i])
+                    {
+                        min = x[i];
+                    }
+                }
+                for(var i =0;i<x.length;i++)
+                {
+                    document.writeln(" "+x[i]);
+                }
+                document.writeln("<br>Max ELement "+max);
+                document.writeln("Min Element "+min);
+            }
+            MInMax();
+            </script>
+        </body>
+    </head>
+</html>

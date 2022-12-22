@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+                document.write("<h1> Leap Year Program </h1>");
+                var year = prompt("Enter the Year");
+                function myFunction(year) {
+                    if (year % 400 == 0)
+                     return true;
+                    else if (year % 100 == 0)
+                    return false;
+                    else if (year % 4 == 0)
+                    return true;
+                }
+                if(myFunction(year))
+                {
+                    document.write(year+" Hey IT is the leap year");
+                }
+                else{
+                    document.write(year+"OOp! your is not leap year");
+                }
+            </script>
+        </body>
+    </head>
+</html>

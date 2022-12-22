@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function ReverseArray()
+            {
+                document.write("<h1>Sub Array Sum</h1>");
+                const x = new Array(5);
+                var sum =0,index=0;
+                for(var i = 0;i<x.length;i++)
+                {
+                    x[i] = prompt("Enter the element ("+i+")");
+                }
+                var a = prompt("Enter the Sum to check");
+                for(var i = 0;i<x.length;i++)
+                {
+                    sum+=x[i];
+                    if(sum=x)
+                    {
+                        var v1 = index+1;
+                        var v2 = i+1;
+                        document.writeln(v1+" "+v2);
+                    }
+                    else if(sum>a)
+                    {
+                        sum=0;
+                        i = index;
+                        index++;
+                    }
+                }
+            }
+            ReverseArray();
+            </script>
+        </body>
+    </head>
+</html>

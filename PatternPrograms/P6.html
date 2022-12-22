@@ -1,0 +1,28 @@
+<!-- 
+* * * * * * * * *
+* * * *   * * * *
+* * *       * * *
+* *           * *
+*               * -->
+
+<script>
+    for(var i=5;i>=1;i--)
+    {
+        for(var k=1;k<=i;k++)
+        {
+            document.write("*");
+        }
+        for(var j=i*2;j<5*2-1;j++)
+        {
+            document.write("&nbsp;&nbsp;");
+        }
+        for(var x=i;x>=1;x--)
+        {
+            if(x!=5)
+            {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+</script>

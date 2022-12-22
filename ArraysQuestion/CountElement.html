@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function ReverseArray()
+            {
+                document.write("<h1>Count Element In  </h1>");
+                const x = new Array(5);
+                for(var i = 0;i<x.length;i++)
+                {
+                    x[i] = prompt("Enter the element("+i+")");
+                }
+                var count=0;
+                var num = prompt("Enter the Number to count ");
+                for(var i =0;i<x.length;i++)
+                {
+                    if(x[i]==num)
+                    {
+                        count++;
+                    }
+                }
+                if(count>0)
+                {
+                    document.writeln("Count for Number "+num+" is "+count);
+                }
+                else{
+                    document.writeln("Element Didn't Found");
+                }
+            }
+            ReverseArray();
+            </script>
+        </body>
+    </head>
+</html>

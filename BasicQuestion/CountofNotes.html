@@ -1,0 +1,52 @@
+<script>
+
+    var money=(note)=>{
+        var note500,note100,note200,note50,note20,note10,note1,note2,note5;
+        if(note>=500)
+        {
+            document.write("500 ka note :- "+parseInt(note/500));
+            note -=note500*500;
+        }
+        else if(note>=200)
+        {
+            document.write("200 ka note :- "+parseInt(note/500));
+            note -=note200*200;
+        }
+        else if(note>=100)
+        {
+            document.write("100 ka note :- "+parseInt(note/100));
+            note -=note100*100;
+        }
+        else if(note>=50)
+        {
+            document.write("50 ka note :- "+parseInt(note/50));
+            note -=note50*50;
+        }
+        else if(note>=20)
+        {
+            document.write("20 ka note :- "+parseInt(note/20));
+            note -=note20*20;
+        }
+        else if(note>=10)
+        {
+            document.write("10 ka note :- "+parseInt(note/10));
+            note -=note10*10;
+        }
+        else if(note>=5)
+        {
+            document.write("5 ka note :- "+parseInt(note/5));
+            note -=note5*5;
+        }
+        else if(note>=2)
+        {
+            document.write("2 ka note :- "+parseInt(note/2));
+            note -=note2*2;
+        }
+        else if(note>=1)
+        {
+            document.write("1 ka note :- "+parseInt(note/1));
+            note -=note1*1;
+        }
+    }
+    money(1500);
+</script>

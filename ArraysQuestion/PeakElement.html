@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            function PeakElement()
+            {
+                document.write("<h1>Peak Element in Array</h1>");
+                // const x = [40, 100, 1, 5, 25, 10];
+                const x = new Array(5);
+                for(var i = 0;i<x.length;i++)
+                {
+                    x[i] = prompt("Enter the Element"+i+".....");
+                }
+                var max=0;
+
+                for(var i = 0;i<x.length;i++)
+                {
+                    if(x[max]<x[i])
+                    {
+                        max=i;
+                    }
+                }
+                for(var i = 0;i<x.length;i++)
+                {
+                    document.write("<h2> "+x[i]);
+                }
+                document.writeln("<h3>Peak Element In Array Is: - "+max);
+            }
+            PeakElement();
+            </script>
+        </body>
+    </head>
+</html>
